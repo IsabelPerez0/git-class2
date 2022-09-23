@@ -23,11 +23,16 @@ function getCostumes(){
                 const costume = response.items[x];
                 $responseContainer.innerHTML+=`
                 id:${costume.idcostume}
+                <br>
                 nombre:${costume.name}
+                <br>
                 marca:${costume.brand}
+                <br>
                 años:${costume.year}
+                <br>
                 descripcion:${costume.description}
-                categoria:${costume.idcategory}`+"<br>";
+                <br>
+                categoria:${costume.idcategory}`+"<br><br>";
             }
 
         }
